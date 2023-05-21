@@ -1,0 +1,9 @@
+{
+
+    "Validusername": "Admin",
+    "Validpassword":"admin123",
+    "Wrongusername" : "nvlkwkjmfljmwe",
+    "Wrongpassword" :"nlnlknloilk",
+    "dashboardfullurl":"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+    "partialdashboardurl":"web/index.php/dashboard/index"
+}
