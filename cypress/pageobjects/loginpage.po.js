@@ -2,12 +2,12 @@ class Loginpage{
 
    usernameInput(){
 
-     return 'input[name="username"]'
+     return '//input[@placeholder="Username"]'
    }
 
    passwordInput(){
 
-     return 'input[name="password"]'
+     return '//input[@name="password"]'
    }
 
    loginbutton(){
