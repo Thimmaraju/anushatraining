@@ -10,10 +10,10 @@ describe('Verify login functionality', () => {
 
         cy.visit('/web/index.php/auth/login')
 
-        cy.get(login.usernameInput()).type(logindata.Validusername)
+        cy.xpath(login.usernameInput()).type(Cypress.env("username"))
 
         //cy.get('input[name="password"]').type("admin123{enter}")
-        cy.get(login.passwordInput()).type(logindata.Validpassword)
+        cy.xpath(login.passwordInput()).type(Cypress.env("password"))
 
         cy.get(login.loginbutton()).click()
 
@@ -34,10 +34,10 @@ describe('Verify login functionality', () => {
     it('Login with invalid username and valid password', () => {
         cy.visit('/web/index.php/auth/login')
 
-        cy.get(login.usernameInpulogin.t()).type(logindata.Wrongusername)
+        cy.xpath(login.usernameInput()).type(logindata.Wrongusername)
 
         //cy.get('input[name="password"]').type("admin123{enter}")
-        cy.get(login.passwordInput()).type(logindata.Validpassword)
+        cy.xpath(login.passwordInput()).type(logindata.Validpassword)
 
         cy.get(login.loginbutton()).click()
 
@@ -49,10 +49,10 @@ describe('Verify login functionality', () => {
     it('Login with valid username and invalid password', () => {
         cy.visit('/web/index.php/auth/login')
 
-        cy.get(login.usernameInput()).type(logindata.Validusername)
+        cy.xpath(login.usernameInput()).type(logindata.Validusername)
 
         //cy.get('input[name="password"]').type("admin123{enter}")
-        cy.get(login.passwordInput()).type(logindata.Wrongpassword)
+        cy.xpath(login.passwordInput()).type(logindata.Wrongpassword)
 
         cy.get(login.loginbutton()).click()
 
@@ -64,10 +64,10 @@ describe('Verify login functionality', () => {
     it('Login with invalid username and invalid password', () => {
         cy.visit('/web/index.php/auth/login')
 
-        cy.get(login.usernameInput()).type(logindata.Wrongusername)
+        cy.xpath(login.usernameInput()).type(logindata.Wrongusername)
 
         //cy.get('input[name="password"]').type("admin123{enter}")
-        cy.get(login.passwordInput()).type(logindata.Wrongpassword)
+        cy.xpath(login.passwordInput()).type(logindata.Wrongpassword)
 
         cy.get(login.loginbutton()).click()
 

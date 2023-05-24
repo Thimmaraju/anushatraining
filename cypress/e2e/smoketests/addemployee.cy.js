@@ -11,10 +11,10 @@ describe('Verify add employee functionality', () => {
 
         cy.visit('/web/index.php/auth/login')
 
-        cy.get(login.usernameInput()).type(data.Validusername)
+        cy.get(login.usernameInput()).type(Cypress.env("username"))
   
         //cy.get('input[name="password"]').type("admin123{enter}")
-        cy.get(login.passwordInput()).type(data.Validpassword)
+        cy.get(login.passwordInput()).type(Cypress.env("password"))
   
         cy.get(login.loginbutton()).click()
   
