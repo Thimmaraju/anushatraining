@@ -1,0 +1,632 @@
+Why we do automation :
+----------------------
+
+
+
+3. ROI 
+   
+   Automation 
+   
+   2 crore
+
+---------------
+1. Save Time 
+   
+   700
+   Chrome 
+   
+   Firefox
+   
+   Edge 
+   
+   Safari 
+   
+   Cross browser Testing 
+   
+   Parallel Testing 
+   
+   
+2. Repitative tests
+
+3. Reduce stress lot on QA team 
+
+4. Reports 
+
+    Statistics 
+	
+5. Programming extra 
+
+6. Accuracy 
+
+---------------------------------
+	
+
+When We will do automation :
+----------------------------
+
+1. Repitative tests
+2. ROI
+3. Application Stable 
+
+
+--------------------------------
+Choose the tools - Based some Factor 
+
+1. With programming / With out programming
+
+    Tools :
+	
+	Tosca 
+	
+	UFT
+	
+	Selenium 
+	
+	Protractor 
+	
+	Serenity JS
+	
+	Cypress 
+	
+	Playwrite 
+	
+	Jest 
+	
+	citrus 
+	
+	
+2. Cost 
+
+   Paid tools :
+   -------------
+   U have to Pay 
+   
+   Supoort 
+   
+    Ex: UFT 
+	    worksoft 
+   
+   
+   Open source :
+   -------------
+   
+    Free 
+	
+	Freatures may work / may not work 
+	
+	There is not reliable support 
+	
+	
+3. Programming Language Support 
+
+4. My resources knows which language 
+
+5. UI / API / Desktop / Mobile 
+
+   Selenium - UI
+   
+    Selenium - Java 
+	Rest assured 
+	Appium 
+   
+   Katalon - 
+   
+   Cypress -
+   
+6. UI Automation
+
+    Which framework 
+	
+	Angular JS
+	
+	React JS
+	
+	VUE
+	
+	noode js 
+	
+	Traditional 
+   
+   Selenium 
+   
+   Protractor
+   
+   Cypress 
+
+7. Features 
+
+     Integration
+	 
+	 Languague  support 
+	 
+	 Reports 
+	 
+-----------------------------------------------
+
+Selenium Vs Cypress 
+
+
+1.  Browser support 
+
+    All Major browsers 
+	
+2. Languagues 
+
+
+3. UI 
+
+4. NO Reports 
+
+   Selenium - Java  - TestNG , JUnit, extent reports 
+   
+   Selenium - C# - MSTest , Nunit 
+   
+   Selenium - Pythos - pytest
+   No Video recording 
+   
+5. Comparatively with cypress Tests running slow 
+
+6. Architecture 
+
+   Script - Browser driver - Browser 
+   
+   cypress - browser 
+   
+7. Synchronization 
+
+    Handle waits 
+	
+	Test will not reliable 
+	
+	
+8. Community support 
+
+9. Documentation 
+
+10. Parallal , cross bowser
+
+11. Selenium Grid 
+
+-----------------------------------------
+
+Cypress 
+
+1. Browser support 
+
+  chrome , firefox , edge 
+  
+  Safari - Does not support 
+  
+2. Supports - JS / TS 
+
+3. Unit Testing / QA - UI / API
+
+4. Cypress
+
+   Video recording 
+   Screenshots 
+   Cypress cloud reports - Paid 
+   Time Travel 
+   Mocking 
+   stubing
+   clocks 
+   
+5. Fast 
+
+6. All New UI framework - Support 
+
+   Angular JS, React Js , Vue 
+   
+7. Synchronization 
+
+    reliable Tests 
+8. At a time we can not tests multiple browsers 
+
+----------------------
+
+Cypress Limitations
+
+  1. In a single Multiple domains 
+  2. Switching between tabs is not possible 
+  3. Iframe support 
+  4. CSS
+  
+-------------------------------------------
+
+ Cypress 
+ 
+ 
+JS /TS 
+
+ 
+1. JS Basics 
+
+2. Locators 
+
+3. Framework 
+
+-----------------------
+
+Node Js 
+
+Vs code (Code Editor)
+
+-------------------------
+
+How to Install cypress 
+
+
+Cypress folder structure 
+
+
+cypress 
+    downloads - all the downloaded files will be saved to this folder
+    e2e - all the test scripts 
+	fixtures - Test data mainatanance 
+	support- 
+	   commands.js - custom commands, global where i can access in my tests
+	   e2e.js - external library 
+node_modules - all the libraries 
+cypress.config.js - global level configs 
+pack-lock.json
+package.json - Project package info 
+               dependencies 
+			   
+			   
+======================================
+
+
+Verify login functionality  - Test suite 
+
+  1. Login with valid creds  - Test case
+  2. Login with invalid username and valid password - test case 
+  3. Login with valid username and invalid password
+  4. Login with invalid username and invalid password
+
+---------------------------------
+
+
+Cypress 
+
+Mocha - Test framework
+
+ describe - Test suite 
+ 
+ it - Test case
+ 
+=========================
+
+dev 
+
+localhost/4200
+
+QA 
+
+qa.flipcart.com
+
+UAT 
+
+uat.flipcart.com
+
+staging  /cert
+
+staging.flipcart.com
+
+Production
+
+flipcart.com
+
+---------------------------------------
+alpha testing
+
+Beta  Testing 
+
+==============================
+
+POM - Page Object Model 
+
+
+Locators
+=========
+
+
+css 
+xpath 
+id 
+class 
+calssname
+tagname
+link
+linktext
+cy.get(csslocator).
+
+//driver.findelement(by.id())
+
+cy.get(csslocator)
+
+xpath
+
+external plugin
+
+cy.xpath(xpathlocator)
+
+
+
+Mocha 
+
+describe 
+
+chai 
+
+
+
+cypress 
+
+cy.visit()
+
+cypress-xpath
+
+cy.xpath()
+
+
+cy.id()
+
+=======================================
+xpath 
+
+css
+
+-----------------------
+
+xpath 
+
+xml path 
+
+1. Absolute xpath
+
+/ - single slash
+
+ always starts with root node 
+ 
+ ex:
+  /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+
+2. Relative xpath
+
+// - double slash 
+
+always starts with relative node 
+
+ex:
+//input[@name="username"]
+
+
+1. Basic syntax 
+
+
+  //tagname[@attrname='attributevalue']
+  
+  //input[@name="username"]
+  
+  
+2. Text 
+
+//tagname[text()='full text']
+
+//p[text()='Forgot your password? ']
+
+//span[text()='Admin']
+
+
+partial text 
+
+
+//tagname[contains(.,"partialtext")]
+
+//p[contains(.,'Forgot your')]
+
+ex: //p[contains(.,'Forgot your')]
+
+
+3. AND 
+
+//tagname[@attr1='attr1value'][@attr2='attr2value']
+
+//tagname[@attr1='attr1value'and @attr2='attr2value']
+
+//input[@name="username"][@placeholder="Username"]
+
+
+4. OR 
+
+
+//tagname[@attr1='attr1value' or @attr2='attr2value']
+
+//input[@name="username" or @placeholder="raju"]
+
+
+5. Starts with prefix  
+
+  id=message1123
+  id=message2132
+  id=message1124
+
+
+//tagname[starts-with(@attributename, "prefeixvalue")]
+
+//input[starts-with(@name, "name")]
+
+
+6. contains 
+
+  id=message1123
+  id=message2132
+  id=message1124
+
+
+//tagname[contains(@attributename, "prefeixvalue")]
+
+//input[contains(@name, "name")]
+
+7. Indexing 
+
+  expression - multiple elements 
+
+(expression)[1]
+
+
+(expression)[last()]
+
+(//input[contains(@name, "name")])[1]
+
+
+This is not available in css 
+
+8. Parent node to child node 
+
+  expression -node 
+  
+  parentnode/childnode/grandchild/
+  
+9. child node to parent node 
+
+   childnode/..
+   
+   //div[@id="wrapper"]/..
+   
+   this is not possible in css 
+   
+ axes method 
+  
+10. following 
+
+
+ expression//following::tagname
+ 
+ expression//following::expression
+ 
+ //body//following::script
+ 
+ 
+11 following-sibling
+
+
+expression//following-sibling::tagname
+
+//body/script/following-sibling::center
+
+
+expression//ancestor::tagname
+
+expression//preceeding::tagname
+
+
+======================================================
+
+CSS
+
+
+1. Basic 
+
+ tagname[attributename='attributevalue']
+ 
+ input[id="userEmail"]
+ 
+2. Id 
+
+ #idvalue 
+ 
+ #userEmail
+ 
+3. class 
+
+ .classvalue
+ 
+ .class1value.class2value.class3value
+ 
+ .container.playgound-body
+ 
+4. Text 
+
+  With help text we can not write css 
+
+
+  cy.get()
+  
+  cy.contains("text") 
+
+5. AND
+
+
+tagname[attr1='attr1value'][attr2='attr2value']
+   
+input[placeholder="Full Name"][id="userName"]
+
+
+6. Starts with - prefix 
+
+tagname[attributename^='prefixvalue']
+
+
+input[name^="name"]
+
+
+7. contains - prefix 
+
+tagname[attributename*='partialvalue']
+
+
+input[name*="name"]
+
+
+id=212313message
+
+
+8. Parent node > child node 
+
+#userName-wrapper > div
+
+
+9. Parent to child
+
+cy.get('#userName-wrapper').parent()
+
+10 indexing not possible 
+
+xpath
+   (expression)[1]
+   (expression)[last()]
+
+cy.get('locator').first()
+
+cy.get('locator').eq(0)
+
+cy.get('locator').last()
+
+11. following-sibling
+
+ expression + following node
+ 
+ #userName-wrapper +div#userEmail-wrapper > div +div >input
+ 
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
