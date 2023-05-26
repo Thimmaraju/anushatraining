@@ -1,17 +1,19 @@
 const availablefixtures = [
     {
         "name": "Module1/register",
-        "context": "1"
+        "context": "Raju"
     },
     {
         "name": "Module1/register2",
-        "context": "2"
+        "context": "Anusha"
     },
     {
         "name": "Module1/register3",
-        "context": "3"
+        "context": "Arun"
     }
 ]
+
+
 
 describe('Automation Test Suite - Fixtures', function () {
     //loop through both the fixtues 
