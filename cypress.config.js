@@ -6,7 +6,7 @@ module.exports = defineConfig({
     "baseUrl": "https://opensource-demo.orangehrmlive.com",
     "defaultCommandTimeout":20000,
     "pageLoadTimeout": 120000,
-    "retries": { "runMode": 1, "openMode": 3 },
+   // "retries": { "runMode": 1, "openMode": 3 },
     "videoCompression" :0,
     "video": true,
     "videosFolder": "cypress/Anusha",

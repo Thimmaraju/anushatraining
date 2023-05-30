@@ -24,10 +24,16 @@ describe('checkbox Test', function () {
 
       //Text
  
-        cy.xpath('//select[starts-with(@name,"DOB_Month")]').select(8).should("have.value", "08" )
+       // cy.get('#country').select("United Kingdom")
  
-      //
+      //Value 
  
+      cy.get('#country').select("221")
+
+
+      //Index 
+ 
+       cy.get('#country').select(4)
     });
  });
  

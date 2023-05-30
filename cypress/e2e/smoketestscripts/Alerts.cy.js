@@ -24,7 +24,7 @@ describe('Automation - Working with Alerts', function () {
     })
 
 
-    it.only('Cypress Test Case - test Confirm Alert - Ok', function () {
+    it('Cypress Test Case - test Confirm Alert - Ok', function () {
 
         cy.contains('Click for JS Confirm').click();
         cy.on('window:confirm', () => {
@@ -37,7 +37,7 @@ describe('Automation - Working with Alerts', function () {
 
         cy.window().then((win) => {
 
-            cy.stub(win, 'prompt').returns("This is alerts class");
+            cy.stub(win, 'prompt').returns("Anusha");
             cy.contains('Click for JS Prompt').click();
         })
     })

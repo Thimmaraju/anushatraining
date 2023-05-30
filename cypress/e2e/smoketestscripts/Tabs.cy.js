@@ -23,7 +23,7 @@ describe('Automation - Working With Tabs in webpage', function () {
 
      // ================================================
      
-      cy.go(-1) // backword
+      cy.go(-2) // backword
   
       cy.go(1) //forward
   
