@@ -31,6 +31,9 @@ describe('Automation - Working With Links', function () {
       cy.get('a[href="/wiki/Commons:Community_portal"]>span').last().then((txt) => {
         var y = txt.text()
         cy.log(y)
+
+        cy.writeFile('cypress/fixtures/module2/test7.json', { linktext: y});
+     
       })
       
     })

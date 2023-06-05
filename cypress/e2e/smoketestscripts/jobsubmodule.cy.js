@@ -9,9 +9,9 @@ describe('Verify adding employee', () => {
         
         cy.visit('/')
 
-        cy.get(login.usernameInput()).type(Cypress.env("username"))
+        cy.xpath(login.usernameInput()).type(Cypress.env("username"))
 
-        cy.get(login.passwordInput()).type(Cypress.env("password"))
+        cy.xpath(login.passwordInput()).type(Cypress.env("password"))
 
         cy.get(login.loginbutton()).click()
 
