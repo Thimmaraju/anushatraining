@@ -1,6 +1,5 @@
 ///<reference types="cypress"/>
-
-import data from "../fixtures/module1/user_data.json"
+import data from "../../fixtures/module3/user_data.json"
 
 //var user_data =require('../../fixtures/user_data.json')
 

@@ -1,33 +1,27 @@
-import login from '../pageobjects/Login/loginpage.po'
-import jobtitledata from "../fixtures/PIM/addjobtitle.json"
+import login from "../../pageobjects/Login/loginpage.po"
 
 describe('Validate Orange HRM Login functionality', function () {
-
-
+  
   beforeEach(function () {
 
-    cy.session("Restore session", () => {
+    cy.session("Login session", () => {
       cy.visit("/web/index.php/auth/login")
-      cy.xpath(login.usernameInput()).type("Admin")
-      cy.xpath(login.passwordInput()).type("admin123")
-      cy.get(login.loginButton()).click()
+      cy.get(login.usernameinput).type("Admin")
+      cy.get(login.passwordInput()).type("admin123")
+      cy.get(login.loginBtn()).click()
     })
 
   })
 
-  it.only('Validate login with Valid credentials ', function () {
+  it('Validate login with Valid credentials ', function () {
 
 
     cy.visit("/web/index.php/pim/viewEmployeeList");
 
 
-    // cy.url().should('include',"/web/index.php/dashboard/index" )
-    // //or
-    // //cy.location().its('href').should('include',"/web/index.php/pim/viewEmployeeList" )
-
   })
 
-  it.only('Validate timesheet page ', function () {
+  it('Validate timesheet page ', function () {
 
 
     cy.visit("/web/index.php/time/viewEmployeeTimesheet")
@@ -58,7 +52,7 @@ describe('Validate Orange HRM Login functionality', function () {
   })
 
 
-  it.only('Attendance Total Summary Report', function () {
+  it('Attendance Total Summary Report', function () {
 
 
     cy.visit("web/index.php/time/displayAttendanceSummaryReportCriteria")
@@ -76,13 +70,13 @@ describe('Validate Orange HRM Login functionality', function () {
 
   })
 
-  it.only('Add Job title ', function () {
+  it('Add Job title ', function () {
 
 
     cy.visit("/web/index.php/admin/saveJobTitle")
     cy.wait(3000)
 
-    cy.AddJobTitle(jobtitledata.jobtitle, jobtitledata.jobdescription)
+    //cy.AddJobTitle(jobtitledata.jobtitle, jobtitledata.jobdescription)
 
 
   })

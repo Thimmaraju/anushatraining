@@ -5,13 +5,19 @@ describe('Checkboxes', () => {
       cy.visit('https://bit.ly/3vswFBe')
     })
   
-    it('checks all checkboxes with one command', () => {
+
+
+    it.only('checks all checkboxes with one command', () => {
 
       cy.xpath("//input[@type='checkbox']").should("have.length", 7)
+
       cy.xpath("//input[@type='checkbox']").as('checkboxes')
       
       cy.xpath("//input[@type='checkbox']").first()
         .as('firstcheckbox');
+
+      cy.xpath("//input[@type='checkbox']").last()
+        .as('lastcheckbox');
 
 
         cy.get('@checkboxes').check()
@@ -30,6 +36,8 @@ describe('Checkboxes', () => {
         })
 
       cy.get('@firstcheckbox').check()
+
+      cy.get('@lastcheckbox').check()
     })
 
     it('checks all checkboxes with one command', () => {
