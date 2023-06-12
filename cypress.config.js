@@ -7,7 +7,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
 
-    "specPattern": "**/*.feature",
+    //"specPattern": "**/*.feature",
     "projectId": "hagkk9",
     "baseUrl": "https://opensource-demo.orangehrmlive.com",
     "defaultCommandTimeout":20000,
